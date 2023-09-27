@@ -1,0 +1,52 @@
+
+</<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+
+<header>
+<h1>krypt/er</h1>
+</header>
+
+  <body>
+
+<div class="parent">
+
+  <div class="child1">
+  <div class="inputText">
+    <textarea type="text" id="text" placeholder="Type here the message you want to encrypt or decrypt..."></textarea>
+  </div>
+
+
+  <div class="buttons">
+
+    <div class="box">
+        <button class="decryptButton" onClick = "decrypt()" value="btn1">decrypt</button>
+    </div>
+
+    <div class="box">
+      <button class="encryptButton"onClick = "encrypt()" value="btn2">encrypt</button>
+    </div>
+
+    </div>
+
+  </div>
+
+  <div class="child2">
+    <div class="outputText">
+      <div class="image"><img id="search-img" src="images/search.svg" alt="searching"></div>
+      <div class="inputPlaceholder"><p id="inputPlaceholder">Waiting for input...</p></div>
+      <textarea style="display: none"  id="message" readonly placeholder="Waiting for input..."></textarea>
+
+    </div>
+  </div>
+
+</div>
+<script src="script.js"></script>
+  </body>
+</html>
